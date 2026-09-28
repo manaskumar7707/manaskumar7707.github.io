@@ -51,3 +51,15 @@ header nav .arrow-icon{height:16px}
  .hero-cv{color:rgba(255,255,255,.6)}
  .name-stage h1{letter-spacing:-.087273em}
 }
+
+
+/* Figma revision 19: intro layout, metric scale, case-card labels. */
+.hero-bottom{grid-template-columns:minmax(0,calc((100% - 60px)/3)) 1fr;padding-left:18px}
+.hero-copy p{font-weight:700}.hero-introduction{color:#fff}
+.hero-cv{justify-self:start;grid-column:2}
+.career-metrics strong{font-size:38px;line-height:63.8px}
+.case-top span:first-child{color:inherit}
+.case-hero h1{margin-bottom:0}
+@media(max-width:900px) and (min-width:601px){.hero-bottom{grid-template-columns:minmax(0,2fr) 1fr}.hero-cv{grid-column:2}}
+@media(max-width:600px){.hero-bottom{display:block;padding:25px 6px 30px}.hero-copy p{font-weight:400}.hero-cv{padding-bottom:0}.career-metrics strong{line-height:41.8px}}
+@media(max-width:600px){.company-strip.logo-marquee{padding-bottom:0}.hero-stage{padding-bottom:79px}}
